@@ -1,0 +1,15 @@
+machine vm3192.kaj.pouta.csc.fi
+login geant
+password k5tA33MGcwSW0iNOBdb6
+
+machine vm3192.kaj.pouta.csc.fi
+login tesk-1
+password W6WlMic4kyQ6doJ9pnLd6ui6phfUUhbyu7fCyXjvVZfufVsjGr
+
+machine vm4466.kaj.pouta.csc.fi
+login tesk-1
+password Z6fsH6MG 
+
+machine ntc.ics.muni.cz
+login tesk-1
+password Z6fsH6MG
