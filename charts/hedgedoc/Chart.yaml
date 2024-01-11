@@ -3,8 +3,7 @@ name: hedgedoc-helm
 description: A Helm chart for OpenShift
 
 maintainers:
-  - name: Tristan Perard
-    email: tristan.perard@csc.fi
+  - name: pepito
 
 # A chart can be either an 'application' or a 'library' chart.
 #
