@@ -9,11 +9,11 @@ secret:
   databaseName: hedgedoc
   databaseUser: hedgedoc
 
-# If openshift.enabled    
+# If openshift.enabled
 route:
   insecureEdgeTerminationPolicy: Redirect
   termination: edge
-  
+
 # Parameters related to the deployment of HedgeDoc
 hedgedoc:
   appname: my-hedgedoc
