@@ -2,6 +2,10 @@ apiVersion: v2
 name: hedgedoc-helm
 description: A Helm chart for OpenShift
 
+maintainers:
+  - name: Tristan Perard
+    email: tristan.perard@csc.fi
+
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
