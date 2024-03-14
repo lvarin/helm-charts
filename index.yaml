@@ -250,6 +250,22 @@ entries:
     version: 1.12.0-dev
   hedgedoc-helm:
   - apiVersion: v2
+    created: "2024-03-14T14:22:52.007225764Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    description: Hedgedoc Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
+    digest: 864b9139b91b7ad4a032863e6c474ec15165794b4057144fbb10309fc93edd1d
+    icon: https://raw.githubusercontent.com/hedgedoc/hedgedoc/develop/frontend/src/app/icon.png
+    name: hedgedoc-helm
+    sources:
+    - https://github.com/CSCfi/helm-charts
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/hedgedoc-helm-1.1.1/hedgedoc-helm-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
     created: "2024-03-14T14:18:04.104217282Z"
     dependencies:
     - condition: postgresql.enabled
@@ -265,6 +281,24 @@ entries:
     - https://github.com/lvarin/helm-charts/releases/download/hedgedoc-helm-1.0.0/hedgedoc-helm-1.0.0.tgz
     version: 1.0.0
   jupyterhub:
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: "2024-03-14T14:22:52.12614214Z"
+    description: Multi-user Jupyter installation Link to the repo https://github.com/CSCfi/helm-charts
+    digest: 2876afd59a2de768ca83b3fb85cc5ecaa8cecefe4635b6f8008cb89c9f69d9cc
+    home: https://z2jh.jupyter.org
+    icon: https://hub.jupyter.org/helm-chart/images/hublogo.svg
+    keywords:
+    - jupyter
+    - jupyterhub
+    - z2jh
+    kubeVersion: '>=1.23.0-0'
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/jupyterhub-1.1.1/jupyterhub-1.1.1.tgz
+    version: 1.1.1
   - apiVersion: v2
     appVersion: 4.0.2
     created: "2024-03-14T14:18:04.369898605Z"
@@ -285,6 +319,17 @@ entries:
     version: 0.0.1-set.by.chartpress
   matomo-helm:
   - apiVersion: v2
+    created: "2024-03-14T14:22:52.234334627Z"
+    description: Matomo Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
+    digest: 82ae2630eab3eb054e66441abfdd8c10528e687f038055248fecfcce19b1da83
+    icon: https://avatars.githubusercontent.com/u/698038?s=280&v=4
+    name: matomo-helm
+    sources:
+    - https://github.com/CSCfi/helm-charts
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/matomo-helm-1.1.1/matomo-helm-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
     created: "2024-03-14T14:18:04.570047616Z"
     description: Matomo Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
     digest: df347a29bc581dd9a8d722de4b98002986a870d225d81d6b7506a27d7d49817b
@@ -295,6 +340,17 @@ entries:
     - https://github.com/lvarin/helm-charts/releases/download/matomo-helm-1.0.0/matomo-helm-1.0.0.tgz
     version: 1.0.0
   minio-helm:
+  - apiVersion: v2
+    created: "2024-03-14T14:22:52.354423443Z"
+    description: Minio Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
+    digest: 82824c25cebbfdcd582a37640f3d72664acb711671d582c6c2f347effb4a8f6d
+    icon: https://min.io/resources/img/logo.svg
+    name: minio-helm
+    sources:
+    - https://github.com/CSCfi/helm-charts
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/minio-helm-1.1.1/minio-helm-1.1.1.tgz
+    version: 1.1.1
   - apiVersion: v2
     created: "2024-03-14T14:18:04.867378503Z"
     description: Minio Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
@@ -357,6 +413,18 @@ entries:
     version: 0.4.0
   prometheus-grafana-helm:
   - apiVersion: v2
+    created: "2024-03-14T14:22:52.579729274Z"
+    description: Prometheus and Grafana Helm Chart for Rahti platform Link to the
+      repo https://github.com/CSCfi/helm-charts
+    digest: bf3c0a915e5fba89c74934313f1685ed1ec3aea7d335dfa7f675488a0b92dffa
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Grafana_icon.svg/351px-Grafana_icon.svg.png
+    name: prometheus-grafana-helm
+    sources:
+    - https://github.com/CSCfi/helm-charts
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/prometheus-grafana-helm-1.1.1/prometheus-grafana-helm-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
     created: "2024-03-14T14:18:05.288332857Z"
     description: Prometheus and Grafana Helm Chart for Rahti platform Link to the
       repo https://github.com/CSCfi/helm-charts
@@ -403,7 +471,52 @@ entries:
     urls:
     - https://github.com/lvarin/helm-charts/releases/download/rocketchat-6.4.4/rocketchat-6.4.4.tgz
     version: 6.4.4
+  - apiVersion: v2
+    appVersion: 6.4.4
+    created: "2024-03-14T14:22:52.682529603Z"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - condition: microservices.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts
+      version: 0.15.x
+    description: Prepare to take off with the ultimate chat platform, experience the
+      next level of team communications. Link to the repo https://github.com/CSCfi/helm-charts
+    digest: dfc88ef3afcf017135a0ad9583c327d588e1725160b608aa74d904e3f9248e33
+    home: https://rocket.chat/
+    icon: https://raw.githubusercontent.com/RocketChat/Rocket.Chat.Artwork/master/Logos/icon.svg
+    keywords:
+    - chat
+    - communication
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    - meteor
+    maintainers:
+    - email: cloud@rocket.chat
+      name: RocketChat
+    name: rocketchat
+    sources:
+    - https://github.com/RocketChat/Docker.Official.Image/
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/rocketchat-1.1.1/rocketchat-1.1.1.tgz
+    version: 1.1.1
   rstudio-helm:
+  - apiVersion: v2
+    created: "2024-03-14T14:22:52.802793668Z"
+    description: RStudio Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
+    digest: 15f02cf40f3d7d921f26015b841e983b489b940f2b9901885766f380e1890002
+    name: rstudio-helm
+    sources:
+    - https://github.com/CSCfi/helm-charts
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/rstudio-helm-1.0.1/rstudio-helm-1.0.1.tgz
+    version: 1.0.1
   - apiVersion: v2
     created: "2024-03-14T14:18:05.8504656Z"
     description: RStudio Helm Chart for Rahti platform Link to the repo https://github.com/CSCfi/helm-charts
@@ -448,6 +561,39 @@ entries:
     urls:
     - https://github.com/lvarin/helm-charts/releases/download/spark-8.1.6/spark-8.1.6.tgz
     version: 8.1.6
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: spark
+          image: docker.io/bitnami/spark:3.5.0-debian-11-r16
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.5.0
+    created: "2024-03-14T14:22:52.923891136Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Spark is a high-performance engine for large-scale computing
+      tasks, such as data processing, machine learning and real-time data streaming.
+      It includes APIs for Java, Python, Scala and R. Link to the repo https://github.com/CSCfi/helm-charts
+    digest: 2b2f8be2e35ce19b1842d0f9e4fd4f8d6fda7d093364ff6eb038979308b7adaa
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/spark/img/spark-stack-220x234.png
+    keywords:
+    - apache
+    - spark
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: spark
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/spark
+    urls:
+    - https://github.com/lvarin/helm-charts/releases/download/spark-1.1.1/spark-1.1.1.tgz
+    version: 1.1.1
   tesk:
   - apiVersion: v2
     appVersion: dev
@@ -459,4 +605,4 @@ entries:
     urls:
     - https://github.com/lvarin/helm-charts/releases/download/tesk-0.1.1/tesk-0.1.1.tgz
     version: 0.1.1
-generated: "2024-03-14T14:18:06.06929768Z"
+generated: "2024-03-14T14:22:52.923927865Z"
